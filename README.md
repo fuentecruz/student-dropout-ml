@@ -1,99 +1,127 @@
-Dataset sintético para la predicción de deserción estudiantil utilizando Machine Learning
-# 🎓 Student Dropout Prediction - Synthetic Dataset
+# 🎓 Predicción de Deserción Estudiantil con Machine Learning
 
-## 📌 Description
-This project focuses on the creation of a synthetic dataset to simulate student dropout in a university context. The goal is to support the analysis and prediction of student attrition using Machine Learning techniques.
+## 📌 Descripción
 
----
-
-## 🎯 Objective
-To generate a dataset that allows the identification of students at risk of dropping out during their first academic year.
+Este proyecto consiste en la creación de un dataset sintético que simula la deserción estudiantil en un contexto universitario. Su propósito es facilitar el análisis y la predicción de abandono académico mediante técnicas de Machine Learning.
 
 ---
 
-## 🧠 Machine Learning Approach
-This problem is framed as a **supervised learning classification task**, since the objective is to predict a binary outcome (Dropout: Yes/No).
+## 🎯 Objetivo
 
-A **Logistic Regression model** is proposed because:
-- It is suitable for binary classification problems  
-- It estimates probabilities  
-- It is simple and interpretable  
+Generar un conjunto de datos que permita identificar estudiantes en riesgo de abandonar sus estudios durante el primer año académico.
 
 ---
 
-## 📊 Dataset Information
+## 🧠 Enfoque de Machine Learning
 
-The dataset contains **500 records** and includes the following types of variables:
+El problema se aborda como una tarea de **clasificación supervisada**, donde se predice una variable binaria:
 
-### 🔹 Demographic Variables
-- Age: 17–30  
-- Gender: Male / Female  
-- Origin: Urban / Rural  
+* **Dropout:** Sí / No
 
-### 🔹 Academic Variables
-- HighSchool_GPA: 50–100 (with outliers up to 120)  
-- Admission_Score: 50–100  
-- First_Semester_Grade: 40–100 (with outliers = 0)  
+Se propone el uso de **Regresión Logística** debido a que:
 
-### 🔹 Financial Variables
-- Socioeconomic_Level: Low / Medium / High  
-- Scholarship: Yes / No  
-- Loan: Yes / No  
-
-### 🔹 Target Variable
-- Dropout: Yes / No  
+* Es adecuada para problemas de clasificación binaria
+* Permite estimar probabilidades
+* Es fácil de interpretar
 
 ---
 
-## ⚠️ Data Issues Introduced
+## 📊 Información del Dataset
 
-To simulate real-world scenarios, the dataset includes:
+El dataset contiene **500 registros** con las siguientes variables:
 
-- **Missing values:**  
-  5% of the data was randomly replaced with null values.
+### 🔹 Variables Demográficas
 
-- **Outliers:**  
-  - HighSchool_GPA values up to 120  
-  - First_Semester_Grade values equal to 0  
+* Edad: 17–30
+* Género: Masculino / Femenino
+* Origen: Urbano / Rural
 
-- **Categorical variables:**  
-  Multiple variables are categorical and require encoding for modeling.
+### 🔹 Variables Académicas
 
----
+* HighSchool_GPA: 50–100 (con outliers hasta 120)
+* Admission_Score: 50–100
+* First_Semester_Grade: 40–100 (incluye valores atípicos como 0)
 
-## 📈 Exploratory Data Analysis (EDA)
+### 🔹 Variables Financieras
 
-An exploratory analysis was performed using Google Colab to understand the dataset.
+* Nivel Socioeconómico: Bajo / Medio / Alto
+* Beca: Sí / No
+* Préstamo: Sí / No
 
-### 🔎 Key Findings:
-- The dataset structure and variables were successfully validated.  
-- Missing values and outliers were identified as expected.  
-- The distribution of the *Dropout* variable was analyzed.  
-- A relationship between academic performance and dropout risk was observed.  
+### 🔹 Variable Objetivo
 
-### 🧾 Conclusion:
-The dataset is consistent, meets all the requirements of the activity, and is suitable for supervised Machine Learning models focused on dropout prediction.
+* Dropout: Sí / No
 
 ---
 
-## 📁 Repository Structure
+## ⚠️ Problemas de Datos Simulados
+
+Para representar escenarios reales, se introdujeron:
+
+* **Valores faltantes:**
+  5% de los datos fueron reemplazados aleatoriamente por valores nulos
+
+* **Outliers:**
+
+  * HighSchool_GPA con valores hasta 120
+  * First_Semester_Grade con valores iguales a 0
+
+* **Variables categóricas:**
+  Requieren codificación para su uso en modelos
+
+---
+
+## 📈 Análisis Exploratorio de Datos (EDA)
+
+Se realizó un análisis exploratorio utilizando Google Colab.
+
+### 🔎 Hallazgos principales:
+
+* Se validó correctamente la estructura del dataset
+* Se identificaron valores faltantes y outliers
+* Se analizó la distribución de la variable objetivo
+* Se observó relación entre el rendimiento académico y la deserción
+
+---
+
+## 📊 Resultados
+
+El modelo de Machine Learning permite identificar patrones asociados al abandono estudiantil.
+*(Aquí puedes agregar accuracy si lo tienes, por ejemplo: “El modelo alcanzó una precisión de XX%”)*
+
+---
+
+## 🧾 Conclusión
+
+El dataset generado es consistente y cumple con los objetivos planteados.
+Permite aplicar técnicas de Machine Learning para predecir la deserción estudiantil y analizar factores de riesgo.
+
+---
+
+## 📁 Estructura del Repositorio
+
+```
 student-dropout-ml/
 │
 ├── student_dropout_dataset.csv
 ├── analysis.ipynb
 └── README.md
+```
 
 ---
 
-## Tools Used
+## 🛠️ Herramientas Utilizadas
 
-- Python  
-- Pandas  
-- NumPy  
-- Matplotlib  
-- Seaborn  
-- Google Colab  
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Google Colab
 
 ---
 
-##  Final Notes
+## 📌 Notas Finales
+
+Este proyecto fue desarrollado con fines académicos para simular un caso real de análisis de datos y Machine Learning.
+
